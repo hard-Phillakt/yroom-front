@@ -1,0 +1,32 @@
+/*Created by web-developer: DSmel.ru*/
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Oswald', sans-serif;
+
+// Fonts
+$f-oswald: 'Oswald', sans-serif;
+$f-openSans: 'Open Sans', sans-serif;
+
+// Color
+$c-blue: #1B86D5;  
+$c-white: #fff;
+$c-black: #000;
+$c-brown: #8F5541;
+
+@import 'blocks/responsive';
+@import 'blocks/fonts';
+@import 'blocks/button';
+@import 'blocks/m-p-grid';
+@import 'blocks/link';
+@import 'blocks/desc';
+@import 'blocks/title';
+@import 'blocks/card';
+@import 'blocks/header';
+@import 'blocks/cart';
+@import 'blocks/footer';
+
+body {
+    background: $c-white;
+    margin: 0;
+}
+
