@@ -1,4 +1,58 @@
 
 .link {
+  font-family: $f-openSans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  &-menu {
+    display: inline-flex;
+    color: $c-black;
+    padding: 25px 15px;
+    transition: background 0.3s, color 0.3s;
+
+    &:hover {
+      color: $c-white;
+      background: $c-yellow;
+      text-decoration: none;
+    }
+
+    &-active {
+      color: $c-white;
+      background: $c-yellow;
+
+      &:hover {
+        color: $c-white;
+        text-decoration: none;
+      }
+    }
+  }
+
+
+  &-floor-coverings {
+    font-family: $f-oswald;
+    font-style: normal;
+    font-weight: bold;
+    color: $c-black;
+    font-size: 18px;
+
+    &:hover {
+      color: $c-black;
+      text-decoration: none;
+    }
+
+    &_arrow {
+      transition: transform .3s;
+
+      &:hover {
+        transform: translate(5px);
+      }
+    }
+  }
+
+
+  &-footer {
+
+  }
 
 }

@@ -1,0 +1,27 @@
+
+.swiper-wrapper {
+
+  .container {
+    padding-top: 190px;
+  }
+}
+
+.swiper-slide {
+  background-size: cover !important;
+}
+
+.swiper-button-prev, .swiper-button-next{
+  left: 20%;
+  right: auto;
+
+  &::after {
+    content: '';
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  right: 20%;
+  left: auto;
+}
+

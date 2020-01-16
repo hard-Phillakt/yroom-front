@@ -1,4 +1,66 @@
 
 .card {
 
+  &-wrapper {
+    border: 1px solid $c-gray;
+
+    &:hover .card__discount {
+      transform: scale(2);
+      background: #ff3e3e;
+    }
+  }
+
+  &__header {
+    background: $c-gray;
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__footer {
+
+    &_price {
+      width: 40%;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    position: relative;
+    width: 180px;
+    height: 130px;
+  }
+
+  &__old-price {
+    color: $c-old-price;
+    text-decoration: line-through;
+  }
+
+  &__new-price {
+
+    span {
+      font-family: $f-openSans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 2;
+    }
+  }
+
+  &__discount {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F75252;
+    border-radius: 50em;
+    color: $c-white;
+    border: 1px solid $c-white;
+    transition: all .3s;
+  }
 }

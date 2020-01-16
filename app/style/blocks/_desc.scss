@@ -1,4 +1,14 @@
 
 .desc {
 
+  &-slider {
+
+    &-sm {
+      font-family: $f-openSans;
+      color: $c-white;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
 }

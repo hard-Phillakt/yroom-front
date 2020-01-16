@@ -1,0 +1,17 @@
+
+.header-mobile-menu__hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9999999;
+}
+
+.hamburger {
+  padding: 10px 10px 5px 10px;
+  background: $c-yellow;
+  outline: none;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  height: 2px;
+}

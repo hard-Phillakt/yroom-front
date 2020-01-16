@@ -1,4 +1,4 @@
-/*Created by web-developer: DSmel.ru*/
+/*Created by web-developer: hard-phillakt@mail.ru*/
 
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Oswald', sans-serif;
@@ -8,10 +8,14 @@ $f-oswald: 'Oswald', sans-serif;
 $f-openSans: 'Open Sans', sans-serif;
 
 // Color
-$c-blue: #1B86D5;  
+$c-yellow: #F3D517;
 $c-white: #fff;
 $c-black: #000;
 $c-brown: #8F5541;
+$c-gray: #F6F6F6;
+$c-old-price: #9F9F9F;
+$c-btn-buy: #2C2C2C;
+
 
 @import 'blocks/responsive';
 @import 'blocks/fonts';
@@ -23,10 +27,44 @@ $c-brown: #8F5541;
 @import 'blocks/card';
 @import 'blocks/header';
 @import 'blocks/cart';
+@import 'blocks/slider';
+@import 'blocks/floor-coverings';
+@import 'blocks/hit-sales';
+@import 'blocks/hamburger';
 @import 'blocks/footer';
 
 body {
     background: $c-white;
     margin: 0;
 }
+
+// display-align-items
+.dai-c {
+    display: flex;
+    align-items: center;
+}
+
+
+
+// display-justify-content
+.djc-s {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.djc-c {
+    display: flex;
+    justify-content: center;
+}
+
+.djc-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.djc-sb {
+    display: flex;
+    justify-content: space-between;
+}
+
 

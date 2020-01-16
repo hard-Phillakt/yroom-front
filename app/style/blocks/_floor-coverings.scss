@@ -1,0 +1,17 @@
+
+.floor-coverings {
+
+  &__box {
+    border: 1px solid #eee;
+
+    &_header {
+      display: flex;
+      height: 240px;
+      background-size: cover !important;
+    }
+
+    &_footer {
+      padding: 0 30px 30px 30px;
+    }
+  }
+}

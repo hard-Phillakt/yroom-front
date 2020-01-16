@@ -11,6 +11,7 @@ gulp.task('sass', function () {
     gulp.src([
         './node_modules/bootstrap/dist/css/bootstrap.min.css',
         './node_modules/swiper/css/swiper.min.css',
+        './node_modules/hamburgers/dist/hamburgers.min.css',
         // './node_modules/owl.carousel/dist/assets/owl.carousel.css',
         // './node_modules/owl.carousel/dist/assets/owl.theme.default.css',
         './app/style/main.scss'])
