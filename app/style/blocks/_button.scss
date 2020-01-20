@@ -75,5 +75,50 @@
   }
 
 
+  &__stock {
+    font-family: $f-oswald;
+    color: $c-black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    border: 1px solid $c-black;
+    transition: border .3s ease-in-out;
 
+    @media (max-width: 991px) and (min-width: 360px) {
+      font-size: 12px;
+    }
+
+    &:hover {
+      color: $c-black;
+      text-decoration: none;
+      border: 1px solid $c-yellow;
+
+    }
+  }
+
+  &__collapse {
+    display: flex;
+    border-radius: 5px;
+    color: $c-black;
+    position: relative;
+    font-size: 18px;
+
+    &:hover, &:active, &:focus {
+      color: $c-black;
+      text-decoration: none;
+    }
+
+    &_arrow-bottom {
+      content: '';
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      width: 10px;
+      height: 10px;
+      border-right: 1px solid $c-black;
+      border-top: 1px solid $c-black;
+      transform: rotate(-45deg);
+      transition: all 0.5s ease-in-out;
+    }
+  }
 }

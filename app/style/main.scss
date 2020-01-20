@@ -31,7 +31,13 @@ $c-btn-buy: #2C2C2C;
 @import 'blocks/floor-coverings';
 @import 'blocks/hit-sales';
 @import 'blocks/hamburger';
+@import 'blocks/layers-banner';
+@import 'blocks/UI';
 @import 'blocks/footer';
+@import 'blocks/stock';
+@import 'blocks/additional-menu';
+@import 'blocks/about';
+@import 'blocks/map';
 
 body {
     background: $c-white;
@@ -62,9 +68,22 @@ body {
     justify-content: flex-end;
 }
 
+.dai-end {
+    display: flex;
+    align-items: flex-end;
+}
+
 .djc-sb {
     display: flex;
     justify-content: space-between;
 }
 
+.djc-sa {
+    display: flex;
+    justify-content: space-around;
+}
 
+.dfd-column {
+    display: flex;
+    flex-direction: column;
+}

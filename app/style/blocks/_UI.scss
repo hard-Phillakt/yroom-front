@@ -1,0 +1,79 @@
+
+.sytetic-ui {
+
+
+  &__select {
+      cursor: pointer;
+      border: 1px solid $c-old-price;
+
+    &_arrow-bottom {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 12px;
+        right: 15px;
+        width: 10px;
+        height: 10px;
+        border-right: 1px solid $c-black;
+        border-top: 1px solid $c-black;
+        transform: rotate(135deg);
+
+        @media (max-width: 991px) and (min-width: 769px) {
+          top: 8px;
+        }
+
+        @media (max-width: 768px) and (min-width: 360px) {
+          top: 5px;
+        }
+      }
+    }
+
+    &_header {
+
+    }
+
+
+    .dropdown-menu {
+      position: relative;
+      float: inherit;
+      left: inherit;
+      border-radius: 0;
+      width: 100%;
+      border: 0;
+      padding: 0;
+
+      &_box-link {
+        display: flex;
+        background: $c-yellow;
+        transition: all .3s;
+        color: $c-white;
+      }
+
+      &_box-link:hover {
+        transform: translateX(15px);
+      }
+    }
+  }
+}
+
+
+.ul__yellow_circle {
+
+
+  li {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 8px;
+      left: -18px;
+      width: 5px;
+      height: 5px;
+      background: $c-yellow;
+      border-radius: 50px;
+    }
+  }
+}

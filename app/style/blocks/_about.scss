@@ -1,0 +1,25 @@
+
+.about {
+
+
+  .title-h1, .desc__sm {
+    text-align: center;
+  }
+
+  .shadow-collapse {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .collapse {
+    //padding: 30px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+}
+
+.rotate-top {
+  transform: rotate(135deg);
+}

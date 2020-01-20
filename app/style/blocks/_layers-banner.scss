@@ -1,0 +1,9 @@
+
+.layers-banner {
+
+  height: 240px;
+
+  @media (max-width: 991px) and (min-width: 360px) {
+    height: 44px;
+  }
+}

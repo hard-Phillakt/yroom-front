@@ -4,7 +4,11 @@
   top: 50px;
   left: 0;
   right: 0;
-  z-index: 999999;
+  z-index: 2;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
 
   .nav {
 
@@ -29,44 +33,20 @@
     }
   }
 
-  .search {
-    margin-right: 30px;
-  }
-
-  .cart {
-    cursor: pointer;
-    background: $c-yellow;
-    padding: 25px 15px 24px 10px;
-    position: relative;
-
-    .cart-product-count {
-      position: absolute;
-      top: 17px;
-      right: 5px;
-      width: 18px;
-      height: 18px;
-      border: 1px solid $c-white;
-      background: #F75252;
-      color: $c-white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50em;
-      font-size: 8px;
-    }
-  }
 }
 
 .header-mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
-  width: 320px;
+  width: 300px;
   background: $c-white;
   height: 100vh;
   z-index: 3;
-  padding: 30px 0 30px 30px;
+  padding: 34px 0 0 0;
   transition: all .3s;
   transform: translateX(-320px);
 
@@ -80,7 +60,6 @@
 
   &__ul {
     margin: 0;
-    padding-left: 10px;
 
     li {
       list-style: none;
@@ -88,7 +67,7 @@
       a {
         display: inline-flex;
         color: $c-black;
-        font-size: 20px;
+        font-size: 18px;
         position: relative;
 
         &:hover, &:focus {
@@ -110,6 +89,43 @@
   }
 }
 
+.cart-mobile-menu {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.cart {
+
+  cursor: pointer;
+  background: $c-yellow;
+  padding: 25px 15px 24px 10px;
+  position: relative;
+
+  .cart-product-count {
+    position: absolute;
+    top: 17px;
+    right: 5px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid $c-white;
+    background: #F75252;
+    color: $c-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50em;
+    font-size: 8px;
+  }
+}
+
+.search {
+  margin-right: 30px;
+}
+
 .white-layer {
   position: fixed;
   top: 0;
@@ -125,6 +141,7 @@
 .view-menu {
   transition: all .3s;
   transform: translateX(0);
+  overflow-y: scroll;
 }
 
 .view-layer {

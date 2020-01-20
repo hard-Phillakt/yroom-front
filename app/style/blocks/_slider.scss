@@ -2,7 +2,14 @@
 .swiper-wrapper {
 
   .container {
-    padding-top: 190px;
+    padding: 190px 0 100px 0;
+
+    @media (max-width: 991px) and (min-width: 769px) {
+      padding: 60px 0 60px 0;
+    }
+    @media (max-width: 768px) and (min-width: 360px) {
+      padding: 30px 30px 90px 30px;
+    }
   }
 }
 
@@ -10,13 +17,26 @@
   background-size: cover !important;
 }
 
-.swiper-button-prev, .swiper-button-next{
+.swiper-button-prev, .swiper-button-next {
   left: 20%;
   right: auto;
 
   &::after {
     content: '';
     display: none;
+  }
+
+  @media (max-width: 1400px) and (min-width: 992px) {
+    top: 90%;
+    left: 44%;
+  }
+  @media (max-width: 991px) and (min-width: 769px) {
+    top: 90%;
+    left: 44%;
+  }
+  @media (max-width: 768px) and (min-width: 360px) {
+    top: 90%;
+    left: 36%;
   }
 }
 
@@ -25,3 +45,17 @@
   left: auto;
 }
 
+.swiper-button-next {
+  @media (max-width: 991px) and (min-width: 769px) {
+    top: 90%;
+    right: 44%;
+  }
+  @media (max-width: 1400px) and (min-width: 992px) {
+    top: 90%;
+    right: 44%;
+  }
+  @media (max-width: 768px) and (min-width: 360px) {
+    top: 90%;
+    right: 36%;
+  }
+}
