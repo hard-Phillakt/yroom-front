@@ -10624,14 +10624,14 @@ $(document).ready(function () {
 //   mobile menu
 
     function eventMenu() {
-        if(!$('.hamburger').hasClass('is-active')){
+        if (!$('.hamburger').hasClass('is-active')) {
             $('.hamburger').addClass('is-active')
             $('.header-mobile-menu').addClass('view-menu');
             $('.white-layer').addClass('view-layer');
             $('body').css({
                 overflow: 'hidden'
             })
-        }else {
+        } else {
             $('.hamburger').removeClass('is-active')
             $('.header-mobile-menu').removeClass('view-menu');
             $('.white-layer').removeClass('view-layer');
@@ -10651,13 +10651,12 @@ $(document).ready(function () {
     });
 
 
-
     $('.button__collapse').on('click', function () {
         var arrow = $(this).find('.button__collapse_arrow-bottom');
 
-        if(arrow.hasClass('rotate-top')){
+        if (arrow.hasClass('rotate-top')) {
             arrow.removeClass('rotate-top');
-        }else {
+        } else {
             arrow.addClass('rotate-top');
         }
     })
@@ -10672,12 +10671,12 @@ $(document).ready(function () {
         ymaps.ready(function () {
 
             var myMap = new ymaps.Map('map', {
-                    center: [50.638953, 36.573748],
-                    zoom: 17,
-                    // controls: []
-                }, {
-                    searchControlProvider: 'yandex#search'
-                });
+                center: [50.638953, 36.573748],
+                zoom: 17,
+                // controls: []
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
 
             myMap.behaviors.disable(['scrollZoom', 'rightMouseButtonMagnifier']);
 
@@ -10694,4 +10693,36 @@ $(document).ready(function () {
                 .add(myGeoObject);
         });
     }
+
+
+//    Circle-dots
+    function circleDots(className) {
+
+        $(className).on('click', function () {
+
+            $(className).each(function () {
+                $(this).find('span').removeClass('circle-dots-active');
+            });
+
+            if ($(this).find(className).hasClass('circle-dots-active')) {
+                $(this).find('span').removeClass('circle-dots-active');
+            } else {
+                $(this).find('span').addClass('circle-dots-active');
+            }
+        });
+    }
+    circleDots('.cause');
+    circleDots('.unpacked');
+
+
+    $('#form-dealer').on('submit', function (e) {
+        e.preventDefault();
+
+        console.log($( this ).serialize());
+
+    });
+
+
+
+
 });

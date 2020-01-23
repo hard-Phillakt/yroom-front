@@ -1,0 +1,23 @@
+
+.article {
+
+  &-header {
+    height: 360px;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    border-bottom: 3px solid $c-yellow;
+
+    @media (max-width: 600px) and (min-width: 360px){
+
+      height: calc(360px / 2);
+    }
+  }
+
+  &-content {
+
+  }
+
+  &-footer {
+
+  }
+}

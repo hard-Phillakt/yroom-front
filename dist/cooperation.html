@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>front-lemoni</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=a927f738-0c06-46da-9330-37a4e3010060&amp;lang=ru_RU"
+            type="text/javascript">
+    </script>
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="header">
+        <nav class="nav">
+            <div class="container">
+                <div class="row dai-c">
+                    <div class="col-lg-2">
+                        <a href="#!" class="logo-header">
+                            <img src="./img/header/logo.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-9">
+                        <div class="menu">
+                            <ul>
+                                <li>
+                                    <a href="#!" class="link link-menu link-menu-active">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="link link-menu">Каталог</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="link link-menu">О компании</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="link link-menu">Оплата и доставка</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="link link-menu">Новости и статьи</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="link link-menu">Акции</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="dai-c djc-end">
+                            <div class="search">
+                                <a href="#!">
+                                    <img src="./img/header/ico_search.svg" alt="ico_search">
+                                </a>
+                            </div>
+                            <a class="cart" href="#!">
+                                <span>
+                                    <img src="./img/header/icon_cart.svg" alt="icon_cart">
+                                </span>
+                                <span class="cart-product-count">
+                                    2
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="layers-banner" style="background: url(../img/slider/slider-1.png);"></section>
+
+    <section class="additional-menu pt-50 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="hit-sales__tabs djc-s">
+                        <li>
+                            <a href="#!" class="mr-60">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="#!" class="mr-60">Вакансии</a>
+                        </li>
+                        <li class="active">
+                            <a href="#!" class="mr-60">Сотрудничество</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section dealers -->
+    <section class="cooperation mt-60 pb-30">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <h1 class="title title-h1">Дилерам</h1>
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="desc desc__xs mt-60">
+                                    Мы работаем с компаниями, профессионально занимающимися
+                                    продажей напольных покрытий и сопутствующих товаров.
+                                    Для успешного сотрудничества необходимо наличие
+                                    торговой точкиили демозала со свободным доступом.
+                                    Также должна быть готовностьразместить образцы
+                                    продукции в торговом зале по нашим рекомендациям.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="desc desc__xs desc__xs_bold mt-20">
+                            Для начала сотрудничества заполните, пожалуйста, форму ниже
+                            и в течение одного рабочего дня с Вами свяжется наш представитель.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-lg-offset-1">
+                    <div>
+                        <div class="desc desc__sm desc__xs_bold">
+                            Преимущества, которые <br>
+                            получают наши дилеры
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="black-line mt-10"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="mt-40">
+                                <li class="mb-20">
+                                    1. Информационная и рекламная поддержка
+                                </li>
+                                <li class="mb-20">
+                                    2. Удобство работы
+                                </li>
+                                <li class="mb-20">
+                                    3. Привлекательные финансовые условия
+                                </li>
+                                <li class="mb-20">
+                                    4. Оперативная логистика
+                                </li>
+                                <li class="mb-20">
+                                    5. Поддержка прибыльности вашего бизнеса
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- form-dealer -->
+    <section class="cooperation-dealer pt-60 pb-60">
+        <div class="cooperation-form" id="dealer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="title title-h1">Стать дилером</h2>
+                    </div>
+                </div>
+
+                <div class="row mt-20">
+                    <div class="col-lg-5">
+
+                        <div class="mt-30">
+                            <label for="cooperation-form-name__name" class="pl-10">Фамилия Имя Отчество*</label>
+                            <div class="mt-10">
+                                <input id="cooperation-form-name__name" name="cooperation-name" class="input pt-10 pr-5 pb-10 pl-20"
+                                       type="text" placeholder="Введите ваши Ф.И.О">
+                            </div>
+                        </div>
+
+                        <div class="mt-30">
+                            <label for="cooperation-form-name__company" class="pl-10">Название компании*</label>
+                            <div class="mt-10">
+                                <input id="cooperation-form-name__company" name="cooperation-company" class="input pt-10 pr-5 pb-10 pl-20"
+                                       type="text" placeholder="Введите название компании">
+                            </div>
+                        </div>
+
+                        <div class="mt-30">
+                            <label for="cooperation-form-name__phone" class="pl-10">Телефон*</label>
+                            <div class="mt-10">
+                                <input id="cooperation-form-name__phone" name="cooperation-phone" class="input pt-10 pr-5 pb-10 pl-20"
+                                       type="text" placeholder="Введите контактный номер телефона">
+                            </div>
+                        </div>
+
+                        <div class="mt-30">
+                            <label for="cooperation-form-name__city" class="pl-10">Город*</label>
+                            <div class="mt-10">
+                                <input id="cooperation-form-name__city" name="cooperation-city" class="input pt-10 pr-5 pb-10 pl-20" type="text"
+                                       placeholder="Укажите ваш город">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-lg-offset-2">
+
+                        <div class="mt-30">
+                            <label for="cooperation-form-name__email" class="pl-10">Email</label>
+                            <div class="mt-10">
+                                <input id="cooperation-form-name__email" name="cooperation-email" class="input pt-10 pr-5 pb-10 pl-20"
+                                       type="text" placeholder="Укажите ваш email">
+                            </div>
+                        </div>
+
+                        <div class="mt-30">
+                            <label for="cooperation-form-name__text" class="pl-10">Текст сообщения</label>
+                            <div class="mt-10">
+                                <textarea name="cooperation-text" class="textarea pt-10 pl-20" id="cooperation-form-name__text" cols="10" rows="12">
+
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-7">
+                                <div class="button button-buy pl-50 pr-50 pt-10 pb-10 dai-c mt-20">
+                                    Отправить
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section specialists -->
+    <section class="cooperation mt-60 pb-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <h1 class="title title-h1">Специалистам</h1>
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="desc desc__xs mt-30">
+                                    Компания приветствует любые формы взаимодействия
+                                    c архитекторами, дизайнерами и строителями.Мы предлагаем
+                                    отличные условия для профессионалов рынка!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-30">
+                        <h2 class="title title-h3">
+                            Дизайнерам, архитекторам <br>
+                            и архитектурным бюро
+                        </h2>
+                        <div class="row">
+                            <div class="col-lg-11">
+                                <div class="desc desc__xs mt-30">
+                                    В компании разработана специальная программа персональных
+                                    бонусов для дизайнеров и архитекторов. Мы предлагаем широкий
+                                    ассортимент напольных покрытий — как традиционные,
+                                    так и экзотические породы древесины, а также различные
+                                    виды обработки напольных покрытий.
+                                    Это позволит профессионалам комплектовать объекты от эконом
+                                    до премиум-класса в любой интерьерной стилистике.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-30">
+                        <h2 class="title title-h3">
+                            Строительным организациям
+                        </h2>
+                        <div class="row">
+                            <div class="col-lg-10">
+                                <div class="desc desc__xs mt-30">
+                                    Компания, один из лидеров в производстве напольных покрытий
+                                    из натуральной древесины, заинтересована в сотрудничестве
+                                    со строительными компаниями и частными бригадами
+                                    строительного комплекса. В компании разработана специальная
+                                    бонусная программа для строительных компаний.
+                                    Мы предлагаем отличные условия для профессионалов рынка,
+                                    условия сотрудничества, выгодные именно для вас!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-lg-offset-1">
+                    <div>
+                        <div class="desc desc__sm desc__xs_bold">
+                            Преимущества <br>
+                            сотрудничества с нами:
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="black-line mt-10"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="mt-40">
+                                <li class="mb-20">
+                                    1. Комплексная покупка со всеми аксессуарами и комплектующими
+                                </li>
+                                <li class="mb-20">
+                                    2. Выбор напольного покрытия с учетом новейших мировых
+                                    тенденций в других материалах — мебель, обои, ткани
+                                </li>
+                                <li class="mb-20">
+                                    3. Консультация 7 дней в неделю, оперативное
+                                    решение вопросов
+                                </li>
+                                <li class="mb-20">
+                                    4. Быстрое оформление заказа и доставки
+                                    (складская программа)
+                                </li>
+                            </ul>
+
+                            <div class="desc desc__sx desc__xs_bold mt-30">
+                                Специалисты PARKETOFF Group проводят различные
+                                семинары и мастер-классы, а также выездные
+                                мероприятия. Персональный менеджер всегда готов
+                                ответить на возникшие вопросы, проинформировать
+                                о новинках ассортимента и проводимых акциях,
+                                подобрать аналог по цветовой гамме при отсутствии
+                                требуемого продукта на складе.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- form-specialists -->
+    <section class="cooperation-dealer pt-60 pb-60">
+        <div class="cooperation-form" id="specialists">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="title title-h1">Стать партнером</h2>
+                    </div>
+                </div>
+
+                <div class="row mt-20">
+                    <div class="col-lg-5">
+
+                        <div class="mt-30">
+                            <label for="specialists-form-name__name" class="pl-10">Фамилия Имя Отчество*</label>
+                            <div class="mt-10">
+                                <input id="specialists-form-name__name" name="specialists-name" class="input pt-10 pr-5 pb-10 pl-20"
+                                       type="text" placeholder="Введите ваши Ф.И.О">
+                            </div>
+                        </div>
+
+                        <div class="mt-30">
+                            <label for="specialists-form-name__company" class="pl-10">Название компании</label>
+                            <div class="mt-10">
+                                <input id="specialists-form-name__company" name="specialists-company" class="input pt-10 pr-5 pb-10 pl-20"
+                                       type="text" placeholder="Введите название компании">
+                            </div>
+                        </div>
+
+                        <div class="mt-30">
+                            <label for="specialists-form-name__phone" class="pl-10">Телефон*</label>
+                            <div class="mt-10">
+                                <input id="specialists-form-name__phone" name="specialists-phone" class="input pt-10 pr-5 pb-10 pl-20"
+                                       type="text" placeholder="Введите контактный номер телефона">
+                            </div>
+                        </div>
+
+                        <div class="mt-30">
+                            <label for="specialists-form-name__city" class="pl-10">Город*</label>
+                            <div class="mt-10">
+                                <input id="specialists-form-name__city" name="specialists-city" class="input pt-10 pr-5 pb-10 pl-20" type="text"
+                                       placeholder="Укажите ваш город">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-5 col-lg-offset-2">
+
+                        <div class="mt-30">
+                            <label for="specialists-form-name__email" class="pl-10">Email</label>
+                            <div class="mt-10">
+                                <input id="specialists-form-name__email" name="specialists-email" class="input pt-10 pr-5 pb-10 pl-20"
+                                       type="text" placeholder="Укажите ваш email">
+                            </div>
+                        </div>
+
+                        <div class="mt-30">
+                            <label for="specialists-form-name__text" class="pl-10">Текст сообщения</label>
+                            <div class="mt-10">
+                                <textarea name="specialists-text"  class="textarea pt-10 pl-20" id="specialists-form-name__text" cols="10" rows="12">
+
+                                </textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-5 col-lg-offset-7">
+                                <div class="button button-buy pl-50 pr-50 pt-10 pb-10 dai-c mt-20">
+                                    Отправить
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer mt-90 pb-30 pt-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul class="footer__menu">
+                        <li><a href="#!" class="mb-10">Главная</a></li>
+                        <li><a href="#!" class="mb-10">О компании</a></li>
+                        <li><a href="#!" class="mb-10">Оплата и доставка</a></li>
+                        <li><a href="#!" class="mb-10">Новости и статьи</a></li>
+                        <li><a href="#!" class="mb-10">Акции</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer__menu">
+                        <li><a href="#!" class="mb-10">Линолеум</a></li>
+                        <li><a href="#!" class="mb-10">Ламинат</a></li>
+                        <li><a href="#!" class="mb-10">Ковра</a></li>
+                        <li><a href="#!" class="mb-10">Плинтус</a></li>
+                        <li><a href="#!" class="mb-10">Аксессуары</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul class="footer__menu">
+                        <li class="mb-30">Режим работы:</li>
+                        <li class="mb-30">
+                            <p>Понедельник-Пятница:</p>
+                            <p>9:00-19:00</p>
+                        </li>
+                        <li>
+                            <p>Суббота-Воскресение:</p>
+                            <p>10:00-17:00</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+
+                    <ul class="footer__menu">
+                        <li class="mb-30">Контакты:</li>
+                        <li class="mb-30">
+                            <p>г.Белгород, ул.Урожайная, д.1а</p>
+                        </li>
+                        <li>
+                            <p>
+                                <a href="tel:+74722347005">+7 (4722) 34-70-05</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu -->
+
+    <div class="header-mobile-menu__hamburger">
+        <button class="hamburger hamburger--spring" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+        </button>
+    </div>
+
+    <section class="header-mobile-menu">
+
+        <div class="header-mobile-menu__header">
+            <div class="logo pl-30 mb-30">
+                <a href="#!">
+                    <img src="./img/header/logo.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+
+        <div class="header-mobile-menu__content">
+            <div class="cart-mobile-menu">
+                <div class="dai-c djc-end">
+                    <a class="cart" href="#!">
+                    <span>
+                        <img src="./img/header/icon_cart.svg" alt="icon_cart">
+                    </span>
+                    <span class="cart-product-count">
+                        2
+                    </span>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="header-mobile-menu__ul pl-30">
+                <li><a href="#!" class="mb-20">Главная</a></li>
+                <li><a href="#!" class="mb-20">О компании</a></li>
+                <li><a href="#!" class="mb-20">Оплата и доставка</a></li>
+                <li><a href="#!" class="mb-20">Новости и статьи</a></li>
+                <li><a href="#!" class="mb-20">Акции</a></li>
+            </ul>
+        </div>
+
+        <div class="header-mobile-menu__footer">
+            <footer class="footer pl-30 mt-30 pt-40 pb-40">
+                <ul class="footer__menu">
+                    <li class="mb-20">Режим работы:</li>
+                    <li class="mb-20">
+                        <p>Понедельник-Пятница:</p>
+                        <p>9:00-19:00</p>
+                    </li>
+                    <li>
+                        <p>Суббота-Воскресение:</p>
+                        <p>10:00-17:00</p>
+                    </li>
+                </ul>
+
+                <ul class="footer__menu">
+                    <li class="mb-20">Контакты:</li>
+                    <li class="mb-20">
+                        <p>г.Белгород, ул.Урожайная, д.1а</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="tel:+74722347005">+7 (4722) 34-70-05</a>
+                        </p>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
+    </section>
+
+    <section class="white-layer"></section>
+
+    <!-- Mobile menu end -->
+</div>
+
+
+<script src="./js/main.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+</body>
+</html>

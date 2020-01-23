@@ -38,10 +38,28 @@ $c-btn-buy: #2C2C2C;
 @import 'blocks/additional-menu';
 @import 'blocks/about';
 @import 'blocks/map';
+@import 'blocks/cooperation';
+@import 'blocks/rise';
+@import 'blocks/credit';
+@import 'blocks/return';
+@import 'blocks/article';
+@import 'blocks/product';
 
 body {
     background: $c-white;
     margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: .3em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $c-black;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(230,116,48,.05);
 }
 
 // display-align-items

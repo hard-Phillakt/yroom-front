@@ -5,7 +5,7 @@
     border: 1px solid $c-gray;
 
     &:hover .card__discount {
-      transform: scale(2);
+      //transform: scale(2);
       background: #ff3e3e;
     }
   }
@@ -29,9 +29,13 @@
   &__footer {
 
     &_price {
-      width: 50%;
       text-align: center;
     }
+
+    .row {
+      display: block !important;
+    }
+
   }
 
   &__img {

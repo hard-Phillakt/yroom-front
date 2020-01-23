@@ -13,6 +13,27 @@
     }
   }
 
+  &__xs {
+    font-family: $f-openSans;
+    color: $c-black;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+
+    @media (max-width: 991px) and (min-width: 360px) {
+      font-size: calc(18px / 1.5);
+    }
+
+
+    &_bold {
+      font-weight: 700;
+    }
+  }
+
+
+
+
+
   &-slider {
 
     &-sm {

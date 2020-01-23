@@ -1,0 +1,37 @@
+
+.rise {
+
+  .table > tbody > tr > th, .table > tbody > tr > td {
+    border-top: 0;
+    border-bottom: 1px solid #E9E9E9;
+
+    @media (max-width: 991px) and (min-width: 360px) {
+      font-size: calc(18px / 1.4);
+    }
+  }
+
+  .table > tbody > tr > th {
+    font-size: 18px;
+
+    @media (max-width: 991px) and (min-width: 360px) {
+      font-size: calc(18px / 1.4);
+    }
+  }
+
+  .rise-table {
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .table {
+
+    th, td {
+      padding: 20px 0;
+    }
+  }
+
+  .clear-border-b {
+    border-bottom: 0 !important;
+  }
+}

@@ -1,6 +1,8 @@
 
 .button {
   display: inline-flex;
+  border: none;
+  outline: none;
 
   .button-text{
     position: relative;
@@ -45,8 +47,6 @@
     }
   }
 
-
-
   &-buy {
     cursor: pointer;
     color: $c-white;
@@ -54,12 +54,16 @@
     transition: background 0.3s;
     position: relative;
 
+    @media (max-width: 768px) and (min-width: 360px){
+     justify-content: center;
+    }
+
     &:hover {
       background: rgba(44, 44, 44, 0.95);
     }
 
     &:hover::before {
-      height: 5px;
+      height: 3px;
     }
 
     &::before {
@@ -69,11 +73,10 @@
       left: 0;
       width: 100%;
       height: 0;
-      background: $c-black;
-      transition: height 0.3s;
+      background: $c-yellow;
+      transition: all 0.1s;
     }
   }
-
 
   &__stock {
     font-family: $f-oswald;
@@ -119,6 +122,39 @@
       border-top: 1px solid $c-black;
       transform: rotate(-45deg);
       transition: all 0.5s ease-in-out;
+    }
+  }
+
+  &__tran {
+    cursor: pointer;
+    color: $c-black;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    border: 1px solid $c-black;
+
+    @media (max-width: 768px) and (min-width: 360px){
+      justify-content: center;
+    }
+
+    &:hover {
+      background: rgba(44, 44, 44, 0.95);
+      color: $c-white;
+    }
+
+    &:hover::before {
+      height: 5px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 0;
+      background: $c-black;
+      transition: height 0.3s;
     }
   }
 }
