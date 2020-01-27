@@ -33,25 +33,38 @@ $(document).ready(function () {
         eventMenu();
     });
 
-    $('.white-layer').on('click', function (e) {
+    $('.white-layer').on('click', function () {
         eventMenu();
     });
 
 
-    $('.button__collapse').on('click', function () {
-        var arrow = $(this).find('.button__collapse_arrow-bottom');
+    // Collapse Vacancy and Filter product
+    function collapse(vacancy) {
+        $(vacancy.btnCollapse).on('click', function () {
+            var arrow = $(this).find(vacancy.btnArrow);
+            arrow.hasClass(vacancy.classRotate) ? arrow.removeClass(vacancy.classRotate) : arrow.addClass(vacancy.classRotate);
+        });
+    }
 
-        if (arrow.hasClass('rotate-top')) {
-            arrow.removeClass('rotate-top');
-        } else {
-            arrow.addClass('rotate-top');
-        }
-    })
+    var vacancy = {
+        btnCollapse: '.button__collapse',
+        btnArrow: '.button__collapse_arrow-bottom',
+        classRotate: 'rotate-top'
+    };
+
+    var filter = {
+        btnCollapse: '.filter-arrow-wrapp',
+        btnArrow: '.filter-arrow-close ',
+        classRotate: 'filter-arrow-open'
+    };
+
+    collapse(vacancy);
+    collapse(filter);
+
+    // Collapse Vacancy and Filter product end
 
 
 //    Map
-
-
     var map = document.querySelector('#map');
 
     if (map) {
@@ -81,7 +94,6 @@ $(document).ready(function () {
         });
     }
 
-
 //    Circle-dots
     function circleDots(className) {
 
@@ -98,16 +110,104 @@ $(document).ready(function () {
             }
         });
     }
+
     circleDots('.cause');
     circleDots('.unpacked');
 
 
+    // Filter check-box
+    function checkBox(checkbox) {
+
+        $(checkbox.btnCheckBox).on('click', function (e) {
+            e.preventDefault();
+
+            var checkboxFind = $(this).find(checkbox.type);
+            var checkboxInput = $(this).find('input');
+
+            if (checkboxFind.hasClass(checkbox.checkBoxCheck)) {
+                checkboxFind.removeClass(checkbox.checkBoxCheck);
+                checkboxInput.prop('checked', false);
+            } else {
+                checkboxFind.addClass(checkbox.checkBoxCheck);
+                checkboxInput.prop('checked', true);
+            }
+        });
+    }
+
+    var checkbox = {
+        btnCheckBox: '.checkbox-box',
+        type: '.checkbox',
+        checkBoxCheck: 'checkbox__check'
+    };
+
+    checkBox(checkbox);
+
+
+    // Test form dealer
     $('#form-dealer').on('submit', function (e) {
         e.preventDefault();
 
-        console.log($( this ).serialize());
+        console.log($(this).serialize());
 
     });
+
+    $('[data-toggle="tooltip"]').tooltip({
+        html: true
+    });
+
+
+    // amountCard increment && decrement
+
+    var increment = '+';
+    var decrement = '-';
+
+    function amountCard(btn) {
+
+        btn.each(function (index, item) {
+
+            $(this).on('click', function () {
+
+                var cardAmount = parseInt($('.card-amount').eq(index).val()) ? parseInt($('.card-amount').eq(index).val()) : alert('Не верное значение!');
+
+                if(parseInt(cardAmount)){
+                    switch ($(this).html()) {
+                        case increment:
+                            cardAmount++;
+                            $('.card-amount').eq(index).val(cardAmount) ;
+                            break;
+
+                        case decrement:
+                            if(cardAmount > 1){
+                                cardAmount--;
+                                $('.card-amount').eq(index).val(cardAmount) ;
+                            }
+                            break;
+
+                        default:
+                            return true;
+                            break;
+                    }
+                }else {
+                    $('.card-amount').eq(index).val(1);
+                }
+
+            })
+        });
+    }
+
+    amountCard($('.button__increment'));
+    amountCard($('.button__decrement'));
+
+    // Clear value from input-amount
+
+    $('.card-amount').each(function () {
+        $(this).on('blur', function () {
+            $(this).val() < 1 ? $(this).val(1) : true;
+        })
+    });
+
+
+//  Cart
 
 
 

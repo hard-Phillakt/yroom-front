@@ -123,7 +123,7 @@
     left: -15px;
     width: 15px;
     height: 15px;
-    background: #f6f6f6;
+    background: $c-white;
     border-radius: 10em;
     display: flex;
     align-items: center;
@@ -154,6 +154,29 @@
 }
 
 
+label.checkbox-box {
+  cursor: pointer;
+  margin: 0;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  background: url(../../img/icons/check-false.svg) no-repeat;
+  background-size: cover;
+}
+
+.checkbox__check {
+  background: url(../../img/icons/check-true.svg) no-repeat;
+  background-size: cover;
+}
+
+.checkbox-d-none {
+  display: none;
+}
+
+
 
 label {
   font-weight: 100;
@@ -168,4 +191,85 @@ label {
 
 .noUi-connect {
   background: $c-yellow !important;
+}
+
+
+//.tooltip-box {transition: opacity .3s ease-in-out}
+.tooltip-box:hover .filter-tooltip{
+  opacity: 0.7;
+}
+
+.filter-tooltip {
+  color: #107CFB;
+  border: 1px solid #107CFB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 10em;
+  cursor: pointer;
+  transition: opacity .3s ease-in-out;
+}
+
+
+.tooltip-inner {
+  color: $c-black;
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #E9E9E9;
+  text-align: left;
+  padding: 0 15px 15px 15px;
+}
+
+.tooltip.in {
+  opacity: 1 !important;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  border-width: 0 6px 5px;
+  border-bottom-color: #E9E9E9;
+}
+
+.noUi-target {
+  background: #E9E9E9 !important;
+  border-radius: 4px !important;
+  border: 1px solid #E9E9E9 !important;
+  box-shadow: none !important;
+}
+
+.noUi-horizontal {
+  height: 10px !important;
+}
+
+.noUi-horizontal .noUi-handle {
+  cursor: pointer;
+  top: -9px !important;
+  outline: $c-yellow;
+  width: 34px !important;
+  height: 25px !important;
+}
+
+.noUi-handle:after, .noUi-handle:before {
+  background: transparent !important;
+}
+
+.bg {
+
+  &__yellow {
+    background: $c-yellow;
+  }
+}
+
+.color {
+
+  &__black {
+    color: $c-black;
+
+    &:hover {
+      color: $c-white;
+    }
+  }
 }

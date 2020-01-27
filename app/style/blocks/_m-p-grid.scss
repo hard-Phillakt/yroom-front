@@ -564,6 +564,17 @@
   }
 }
 
+.pr-20 {
+  padding-right: 20px;
+
+  @media (max-width: 991px) and (min-width: 769px) {
+    padding-right: calc(20px / 2);
+  }
+  @media (max-width: 768px) and (min-width: 360px) {
+    padding-right: calc(20px / 3);
+  }
+}
+
 .pr-30 {
   padding-right: 30px;
 

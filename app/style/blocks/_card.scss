@@ -81,11 +81,32 @@
         height: calc(300px / 2);
       }
     }
+
+    &_h500 {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+
+      @media (max-width: 991px) and (min-width: 769px) {
+        height: calc(500px / 2);
+      }
+
+      @media (max-width: 768px) and (min-width: 360px) {
+        height: calc(500px / 3);
+      }
+    }
   }
 
   &__old-price {
     color: $c-old-price;
     text-decoration: line-through;
+
+    &_white {
+      color: $c-white;
+    }
   }
 
   &__new-price {
@@ -95,7 +116,6 @@
       font-style: normal;
       font-weight: bold;
       font-size: 22px;
-      line-height: 2;
     }
   }
 
@@ -124,5 +144,31 @@
     color: $c-white;
     border: 1px solid $c-white;
     transition: all .3s;
+  }
+
+  &-amount {
+
+    &:focus {
+      box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.04);
+    }
+  }
+
+  &-delete-item {
+    cursor: pointer;
+    display: inline-flex;
+    color: $c-btn-buy;
+  }
+
+  &-total {
+
+
+    @media (max-width: 768px) and (min-width: 360px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-top: 15px;
+      padding-right: 15px;
+    }
   }
 }

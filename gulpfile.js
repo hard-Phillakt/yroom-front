@@ -12,6 +12,7 @@ gulp.task('sass', function () {
         './node_modules/bootstrap/dist/css/bootstrap.min.css',
         './node_modules/swiper/css/swiper.min.css',
         './node_modules/hamburgers/dist/hamburgers.min.css',
+            './node_modules/nouislider/distribute/nouislider.min.css',
         // './node_modules/owl.carousel/dist/assets/owl.carousel.css',
         // './node_modules/owl.carousel/dist/assets/owl.theme.default.css',
         './app/style/main.scss'])
@@ -25,8 +26,10 @@ gulp.task('js', function () {
     gulp.src([
         './node_modules/jquery/dist/jquery.js',
         './node_modules/swiper/js/swiper.min.js',
+        './node_modules/nouislider/distribute/nouislider.min.js',
         // './node_modules/bootstrap/dist/css/bootstrap.min.js',
         // './node_modules/owl.carousel/dist/owl.carousel.js',
+        './app/js/init/*.js',
         './app/js/*.js'])
         // .pipe(uglify())
         .pipe(concat('main.js'))

@@ -105,3 +105,30 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+
+// Fonts size
+
+
+.fs {
+
+    &__20 {
+        font-size: 20px;
+    }
+
+    &__18 {
+        font-size: 18px;
+    }
+
+    &__16 {
+        font-size: 16px;
+    }
+
+    &__14 {
+        font-size: 14px;
+    }
+
+    &__12 {
+        font-size: 12px;
+    }
+}

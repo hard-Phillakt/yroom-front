@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
     <!--<link rel="icon" href="favicon.ico" type="image/x-icon">-->
     <link rel="stylesheet" href="./style/main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=a927f738-0c06-46da-9330-37a4e3010060&amp;lang=ru_RU"
             type="text/javascript">
     </script>
@@ -58,7 +57,7 @@
                                     <img src="./img/header/ico_search.svg" alt="ico_search">
                                 </a>
                             </div>
-                            <a class="cart" href="#!">
+                            <a class="menu-cart" href="#!">
                                 <span>
                                     <img src="./img/header/icon_cart.svg" alt="icon_cart">
                                 </span>
@@ -123,60 +122,212 @@
             <div class="row">
                 <div class="col-lg-3">
 
-                    <div>
-                        <h4 class="title title-h4">Цена</h4>
+                    <!-- Filter -->
 
-                        <div class="row mt-30">
-                            <div class="col-lg-6">
-                                <div class="djc-c dai-c">
-                                    <div class="mr-10">От</div>
-                                    <input type="text" class="input input-price-after pl-10 pt-10 pb-10" value="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="djc-c dai-c">
-                                    <div class="mr-10">До</div>
-                                    <input type="text" class="input input-price-before pl-10 pt-10 pb-10" value="">
-                                </div>
-                            </div>
+                    <div class="pl-20 pr-20">
 
-                            <div class="col-lg-12">
-                                <div class="mt-30">
-                                    <div>
-                                        <div id="filter-slider-price"></div>
+                        <!-- price -->
+                        <div>
+                            <h4 class="title title-h4">Цена</h4>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="djc-c dai-c mt-20">
+                                        <div class="desc__xs_bold mr-10">От</div>
+                                        <input type="text" class="input input-price-after pl-10 pt-10 pb-10" value="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="djc-c dai-c mt-20">
+                                        <div class="desc__xs_bold mr-10">До</div>
+                                        <input type="text" class="input input-price-before pl-10 pt-10 pb-10" value="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12">
+                                    <div class="mt-30">
+                                        <div class="mb-30">
+                                            <div id="filter-slider-price"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                        <!-- price end-->
 
-                    <div class="mt-60">
-                        <h4 class="title title-h4">Ширина рулона (м)</h4>
+                        <!-- width role -->
+                        <div class="mt-60">
+                            <h4 class="title title-h4">Ширина рулона (м)</h4>
 
-                        <div class="row mt-30">
-                            <div class="col-lg-6">
-                                <div class="djc-c dai-c">
-                                    <div class="mr-10">От</div>
-                                    <input type="text" class="input input-squares-after pl-10 pt-10 pb-10" value="">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="djc-c dai-c mt-20">
+                                        <div class="desc__xs_bold mr-10">От</div>
+                                        <input type="text" class="input input-squares-after pl-10 pt-10 pb-10" value="">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="djc-c dai-c">
-                                    <div class="mr-10">До</div>
-                                    <input type="text" class="input input-squares-before pl-10 pt-10 pb-10" value="">
+                                <div class="col-lg-6">
+                                    <div class="djc-c dai-c mt-20">
+                                        <div class="desc__xs_bold mr-10">До</div>
+                                        <input type="text" class="input input-squares-before pl-10 pt-10 pb-10"
+                                               value="">
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="col-lg-12">
-                                <div class="mt-30">
-                                    <div>
-                                        <div id="filter-slider-squares"></div>
+                                <div class="col-lg-12">
+                                    <div class="mt-30">
+                                        <div class="mb-30">
+                                            <div id="filter-slider-squares"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!-- width role -->
+
+                        <!-- checkbox 1 -->
+                        <div class="mt-60">
+
+                            <div class="djc-s dai-c">
+                                <a class="filter-arrow-wrapp" data-toggle="collapse" href="#collapse-1" role="button"
+                                   aria-expanded="false" aria-controls="collapse-1">
+                                    <h4 class="title title-h4">Класс износостойкости</h4>
+                                    <span class="filter-arrow-close filter-arrow-open"></span>
+                                </a>
+
+                                <!-- tooltip-box -->
+                                <span class="tooltip-box pt-5 pr-5 pb-5 pl-10"
+                                      data-toggle="tooltip"
+                                      data-placement="bottom"
+                                      title="
+                                        <div class='mt-10'>
+                                            <h4 class='title title-h4'>Класс 42</h4>
+                                            <div class='mt-10'>
+                                                Использование в производственных
+                                                помещениях, большие склады
+                                                с движущимися механизмами.
+                                            </div>
+                                        </div>
+
+                                        <div class='mt-10'>
+                                            <h4 class='title title-h4'>Класс 43</h4>
+                                            <div class='mt-10'>
+                                                Использование в производственных
+                                                помещениях, большие склады
+                                                с движущимися механизмами.
+                                            </div>
+                                        </div>
+
+                                        <div class='mt-10'>
+                                            <h4 class='title title-h4'>Класс 44</h4>
+                                            <div class='mt-10'>
+                                                Использование в производственных
+                                                помещениях, большие склады
+                                                с движущимися механизмами.
+                                            </div>
+                                        </div>
+                                      ">
+                                    <span class="filter-tooltip">?</span>
+                                </span>
+                                <!-- tooltip-box end -->
+
+                            </div>
+
+                            <div class="collapse in" id="collapse-1">
+
+                                <div class="mt-20">
+                                    <label class="checkbox-box">
+                                        <div class="djc-s">
+                                            <div class="checkbox"></div>
+                                            <div class="desc desc__xs desc__xs_bold pl-20">Класс 42</div>
+                                        </div>
+                                        <input type="checkbox" class="checkbox-d-none" name="">
+                                    </label>
+                                </div>
+
+                                <div class="mt-20">
+                                    <label class="checkbox-box">
+                                        <div class="djc-s">
+                                            <div class="checkbox"></div>
+                                            <div class="desc desc__xs desc__xs_bold pl-20">Класс 43</div>
+                                        </div>
+                                        <input type="checkbox" class="checkbox-d-none" name="">
+                                    </label>
+                                </div>
+
+                                <div class="mt-20">
+                                    <label class="checkbox-box">
+                                        <div class="djc-s">
+                                            <div class="checkbox"></div>
+                                            <div class="desc desc__xs desc__xs_bold pl-20">Класс 44</div>
+                                        </div>
+                                        <input type="checkbox" class="checkbox-d-none" name="">
+                                    </label>
+                                </div>
+
+                                <div class="mt-20">
+                                    <label class="checkbox-box">
+                                        <div class="djc-s">
+                                            <div class="checkbox"></div>
+                                            <div class="desc desc__xs desc__xs_bold pl-20">Класс 45</div>
+                                        </div>
+                                        <input type="checkbox" class="checkbox-d-none" name="">
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- checkbox 1 end -->
+
+                        <!-- checkbox 2 -->
+                        <div class="mt-60">
+
+                            <div class="djc-s dai-c">
+                                <a class="filter-arrow-wrapp" data-toggle="collapse" href="#collapse-2" role="button"
+                                   aria-expanded="false" aria-controls="collapse-1">
+                                    <h4 class="title title-h4">Материал основы</h4>
+                                    <span class="filter-arrow-close filter-arrow-open"></span>
+                                </a>
+                            </div>
+
+                            <div class="collapse in" id="collapse-2">
+
+                                <div class="mt-20">
+                                    <label class="checkbox-box">
+                                        <div class="djc-s">
+                                            <div class="checkbox"></div>
+                                            <div class="desc desc__xs desc__xs_bold pl-20">Войлок</div>
+                                        </div>
+                                        <input type="checkbox" class="checkbox-d-none" name="">
+                                    </label>
+                                </div>
+
+                                <div class="mt-20">
+                                    <label class="checkbox-box">
+                                        <div class="djc-s">
+                                            <div class="checkbox"></div>
+                                            <div class="desc desc__xs desc__xs_bold pl-20">Пена</div>
+                                        </div>
+                                        <input type="checkbox" class="checkbox-d-none" name="">
+                                    </label>
+                                </div>
+
+                                <div class="mt-20">
+                                    <label class="checkbox-box">
+                                        <div class="djc-s">
+                                            <div class="checkbox"></div>
+                                            <div class="desc desc__xs desc__xs_bold pl-20">Полиэфир</div>
+                                        </div>
+                                        <input type="checkbox" class="checkbox-d-none" name="">
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- checkbox 2 end -->
                     </div>
 
+                    <!-- Filter end -->
                 </div>
 
 
@@ -413,7 +564,7 @@
         <div class="header-mobile-menu__content">
             <div class="cart-mobile-menu">
                 <div class="dai-c djc-end">
-                    <a class="cart" href="#!">
+                    <a class="menu-cart" href="#!">
                     <span>
                         <img src="./img/header/icon_cart.svg" alt="icon_cart">
                     </span>
@@ -473,58 +624,5 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
         integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.0.3/nouislider.min.js"></script>
-<script>
-
-
-    $(document).ready(function () {
-
-        // 1.
-        // filter-slider-price ################################################
-
-        var filterSliderPrice = document.getElementById('filter-slider-price');
-
-        noUiSlider.create(filterSliderPrice, {
-            start: [100, 900],
-            connect: true,
-            range: {
-                'min': 0,
-                'max': 1000
-            }
-        });
-
-        filterSliderPrice.noUiSlider.on('update', function (values, handle) {
-            $('.input-price-after').val(values[0]);
-            $('.input-price-before').val(values[1]);
-        });
-
-        // filter-slider-price end #############################################
-
-
-        // 2.
-        // filter-slider-squares ################################################
-
-        var filterSliderSquares = document.getElementById('filter-slider-squares');
-
-        noUiSlider.create(filterSliderSquares, {
-            start: [1, 9],
-            connect: true,
-            step: 1,
-            range: {
-                'min': 0,
-                'max': 10
-            }
-        });
-
-        filterSliderSquares.noUiSlider.on('update', function (values, handle) {
-            $('.input-squares-after').val(values[0]);
-            $('.input-squares-before').val(values[1]);
-        });
-
-        // filter-slider-squares end #############################################
-
-    })
-
-</script>
 </body>
 </html>
